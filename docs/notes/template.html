@@ -1,0 +1,46 @@
+<html>
+<head>
+<title>McCoy R. Becker</title>
+<meta name="robots" content="no index, nofollow" charset="utf-8">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']]
+  },
+  svg: {
+    fontCache: 'global'
+  }
+};
+</script>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<link rel="stylesheet"
+      href="../highlight/styles/default.min.css">
+<script src="../highlight/highlight.min.js"></script>
+<script src="../highlight/languages/haskell.min.js"></script>
+<style>
+@import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+@import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
+@import url(https://fonts.googleapis.com/css2?family=PT+Serif&display=swap);
+</style>
+<link rel="stylesheet" type="text/css" href="../css/fonts.css"/>
+<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+</head>
+<body>
+<div id = "navtable">
+<a class="box-link" href="../◊|(parent here)|">∞</a>
+</div>
+◊(->html #:tag 'div #:attrs '((id "doc")) doc)
+<script src="https://utteranc.es/client.js"
+        repo="femtomc/notebook"
+        issue-term="pathname"
+        label="Comments"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
+</body>
+<script>hljs.highlightAll();</script>
+</html>

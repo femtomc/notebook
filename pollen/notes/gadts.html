@@ -1,0 +1,74 @@
+<html>
+<head>
+<title>McCoy R. Becker</title>
+<meta name="robots" content="no index, nofollow" charset="utf-8">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']]
+  },
+  svg: {
+    fontCache: 'global'
+  }
+};
+</script>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<link rel="stylesheet"
+      href="../highlight/styles/default.min.css">
+<script src="../highlight/highlight.min.js"></script>
+<script src="../highlight/languages/haskell.min.js"></script>
+<style>
+@import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+@import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
+@import url(https://fonts.googleapis.com/css2?family=PT+Serif&display=swap);
+</style>
+<link rel="stylesheet" type="text/css" href="../css/fonts.css"/>
+<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+</head>
+<body>
+<div id = "navtable">
+<a class="box-link" href="../">∞</a>
+</div>
+<div id="doc"><h1>Generalized algebraic data types</h1><p>Key to Haskell’s capability of providing the means to construct type-safe embedded domain-specific languages is a concept called <em>generalized algebraic data types</em> (GADTs). I’d like to discuss this briefly–as understanding this concept turns out to be tremendously useful when experimenting with little languages (for research or otherwise).</p><p>In Haskell, users are allowed to specify data types which are parametrized by type parameters:</p><div class="highlight"><pre class="code" decode="exclude"><code class="haskell">data List a = Nil | Cons a (List a)</code></pre></div><p>Now, when I construct an inhabitant of this type, the parameters are inferred automatically:</p><div class="highlight"><pre class="code" decode="exclude"><code class="haskell">-- Typed as List Int
+my_list = Cons 12 (Cons 107 Nil)</code></pre></div><p>A generalized algebraic data type can provide a type instantiation of the data type as the return type of a set of constructors. This gives the programmer explicit control over the type interpretation of inhabitants of the algebraic data type.</p><div class="highlight"><pre class="code" decode="exclude"><code class="haskell">-- Example from: https://en.wikipedia.org/wiki/Generalized_algebraic_data_type
+
+-- A GADT
+-- where `a` instantiates over the return type of each constructor.
+data Expr a where
+    EBool  :: Bool     -&gt; Expr Bool
+    EInt   :: Int      -&gt; Expr Int
+    EEqual :: Expr Int -&gt; Expr Int  -&gt; Expr Bool
+
+eval :: Expr a -&gt; a
+
+eval e = case e of
+    EBool a    -&gt; a
+    EInt a     -&gt; a
+    EEqual a b -&gt; (eval a) == (eval b)
+
+expr1 = EEqual (EInt 2) (EInt 3)        -- the type of expr1 is Expr Bool
+ret = eval expr1                        -- ret is False</code></pre></div><p>Imagine trying to encode this example using parametrized algebraic data types:</p><div class="highlight"><pre class="code" decode="exclude"><code class="haskell">Expr a b = EBool a | EInt a | EEqual a b</code></pre></div><p>Any instantiation using <span class="code" decode="exclude">EEqual _ _</span> will be typed as <span class="code" decode="exclude">Expr Int Int</span>. In this example, this restriction prevents the user from controlling typelevel information about any assumed evaluation semantics (here, codified by <span class="code" decode="exclude">eval</span>). If we wanted to write <span class="code" decode="exclude">eval</span> on the parametrized type, it becomes much messier, even if we allowed multiparameter type classes.</p><div class="highlight"><pre class="code" decode="exclude"><code class="haskell">class Evaluation a b c where
+    eval :: Expr a b -&gt; c
+
+instance Evaluation Bool () Bool where
+    eval (EBool a) = a
+
+instance Evaluation Int () Int where
+    eval (EInt a) = a
+
+instance Evaluation Int Int Bool where
+    eval (EEqual a b) = (eval a) == (eval b)</code></pre></div><p>Representable, but less terse (which is valued in idiomatic modern Haskell). Outside of small calculator languages, things can quickly become quite messy–whereas usage of GADTs affords the programmer some level of control over the type interpretation of terms in their language.</p><p>An extended tutorial which discusses the same concepts in greater detail is <a href="https://en.wikibooks.org/wiki/Haskell/GADT">available on the Haskell wikibooks</a>.</p></div>
+<script src="https://utteranc.es/client.js"
+        repo="femtomc/notebook"
+        issue-term="pathname"
+        label="Comments"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
+</body>
+<script>hljs.highlightAll();</script>
+</html>

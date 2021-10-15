@@ -1,0 +1,8 @@
+digraph G {
+bgcolor="#ffffff00"
+1 -> k;
+k -> elsewhere;
+k -> 1;
+1 -> 2;
+2 -> done;
+}
