@@ -2,16 +2,16 @@ cd pollen
 raco pollen reset
 rm css/*.css
 rm *.html
-rm -rf images
-rm -rf latex
+rm -rf notes/images
+rm -rf notes/latex
 raco pollen render -r .
-rm days/*.db
+rm notes/*.db
 raco pollen publish . $(pwd)/../example
 raco pollen reset
 rm css/*.css
 rm *.html
-rm -rf images
-rm -rf latex
+rm -rf notes/images
+rm -rf notes/latex
 cd ..
 msg="Rebuilding example - $(date)"
 if [ -n "$*" ]; then

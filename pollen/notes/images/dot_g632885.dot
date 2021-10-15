@@ -1,8 +1,0 @@
-digraph G {
-bgcolor="#ffffff00"
-1 -> l;
-l -> elsewhere;
-l -> 1;
-1 -> 2;
-2 -> done;
-}
