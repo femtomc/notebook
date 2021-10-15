@@ -1,0 +1,13 @@
+compiled
+_minted*
+*.aux
+*.log
+*.pre
+*.dot
+*.fls
+*.out
+*.fdb_latexmk
+.latexmk
+!index.html
+.stack-work
+.ghc.*
