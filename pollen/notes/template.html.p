@@ -33,6 +33,7 @@ MathJax = {
 <a class="box-link" href="../◊|(parent here)|">∞</a>
 </div>
 ◊(->html #:tag 'div #:attrs '((id "doc")) doc)
+<div id="doc">
 <script src="https://utteranc.es/client.js"
         repo="femtomc/notebook"
         issue-term="pathname"
@@ -40,6 +41,7 @@ MathJax = {
         theme="github-light"
         crossorigin="anonymous"
         async>
+</div>
 </script>
 </body>
 <script>hljs.highlightAll();</script>

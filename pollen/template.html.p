@@ -25,6 +25,9 @@ MathJax = {
 <link rel="stylesheet" type="text/css" href="css/style.css"/>
 </head>
 <body>
+<div id = "navtable">
+<a class="box-link" href="../◊|(parent here)|">∞</a>
+</div>
 ◊(->html #:tag 'div #:attrs '((id "doc")) doc)
 <div align="center" style="font-family:Yanone Kaffeesatz;">
   <sub>

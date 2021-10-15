@@ -1,12 +1,8 @@
 digraph G {
 bgcolor="#ffffff00"
-rankdir=LR;
-A[label="P"];
-B[label="Q"];
-C[label="P'"];
-D[label="Q'"];
-A->B[label="opt"];
-A->C[label="diff"];
-B->D[label="diff"];
-C->D[label="opt"];
+1 -> 4;
+1 -> 3;
+3 -> 2;
+2 -> 3;
+2 -> 4;
 }

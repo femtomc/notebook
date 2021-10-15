@@ -1,8 +1,6 @@
 #lang pollen
 
 ◊index.html{
-    days/sept_30_2021.html
-    days/oct_1_2021.html
-    days/oct_2_2021.html
-    days/hminf.html
+    notes/gadts.html
+    notes/cpssa.html
 }
