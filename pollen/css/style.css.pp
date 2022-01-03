@@ -53,7 +53,7 @@ figcaption.latex {
 }
 
 body {
-    background-color: #513939;
+    background-color: #dddddd;
     font-family: 'Droid Serif'; 
     border-radius:10px;
     margin-left:auto;
