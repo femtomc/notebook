@@ -29,9 +29,6 @@ MathJax = {
 <link rel="stylesheet" type="text/css" href="../css/style.css"/>
 </head>
 <body>
-<div id = "navtable">
-<a class="box-link" href="../index.html">∞</a>
-</div>
 <div id="doc"><h1>Generalized algebraic data types</h1><p>Key to Haskell’s capability of providing the means to construct type-safe embedded domain-specific languages is a concept called <em>generalized algebraic data types</em> (GADTs). I’d like to discuss this briefly–as understanding this concept turns out to be tremendously useful when experimenting with little languages (for research or otherwise).</p><p>In Haskell, users are allowed to specify data types which are parametrized by type parameters:</p><div class="highlight"><pre class="code" decode="exclude"><code class="haskell">data List a = Nil | Cons a (List a)</code></pre></div><p>Now, when I construct an inhabitant of this type, the parameters are inferred automatically:</p><div class="highlight"><pre class="code" decode="exclude"><code class="haskell">-- Typed as List Int
 my_list = Cons 12 (Cons 107 Nil)</code></pre></div><p>A generalized algebraic data type can provide a type instantiation of the data type as the return type of a set of constructors. This gives the programmer explicit control over the type interpretation of inhabitants of the algebraic data type.</p><div class="highlight"><pre class="code" decode="exclude"><code class="haskell">-- Example from: https://en.wikipedia.org/wiki/Generalized_algebraic_data_type
 
@@ -61,15 +58,6 @@ instance Evaluation Int () Int where
 
 instance Evaluation Int Int Bool where
     eval (EEqual a b) = (eval a) == (eval b)</code></pre></div><p>Representable, but less terse (which is valued in idiomatic modern Haskell). Outside of small calculator languages, things can quickly become quite messy–whereas usage of GADTs affords the programmer some level of control over the type interpretation of terms in their language.</p><p>An extended tutorial which discusses the same concepts in greater detail is <a href="https://en.wikibooks.org/wiki/Haskell/GADT">available on the Haskell wikibooks</a>.</p></div>
-<div id="doc">
-<script src="https://utteranc.es/client.js"
-        repo="femtomc/notebook"
-        issue-term="pathname"
-        label="Comments"
-        theme="github-light"
-        crossorigin="anonymous"
-        async>
-</div>
 </script>
 </body>
 <script>hljs.highlightAll();</script>

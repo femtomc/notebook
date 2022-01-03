@@ -15,8 +15,8 @@ a {
 summary {
     border-left: 2px solid gray;
     padding-left:1rem;
-    font-size: 0.9rem;
-    margin-left: 3rem;
+    font-size: 0.7rem;
+    margin-left: 6rem;
     margin-right: 8rem;
 }
 
@@ -64,11 +64,11 @@ body {
 }
 
 #doc {
-    font-size: 17px;
+    font-size: 14px;
     background-color: #dddddd;
     margin-bottom: 2rem;
-    margin-left: 4rem;
-    margin-right: 4rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
     padding-left: 1rem;
     padding-right: 1rem;
     padding-bottom:0.5rem;
@@ -175,6 +175,7 @@ div.quot {
 ◊|code-tag|.◊|code-class| {
     padding: 0.1rem;
     font-family: julia_mono;
+    font-size: 13px;
     font-feature-settings: "zero", "ss01";
     font-variant-ligatures: contextual;
 }
@@ -184,6 +185,7 @@ div.quot {
     word-wrap: break-word;
     font-family: julia_mono;
     font-feature-settings: "zero", "ss01";
+    font-size: 13px;
     font-variant-ligatures: contextual;
 }
 
