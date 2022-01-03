@@ -57,7 +57,7 @@ figcaption.latex {
 }
 
 body {
-    background-color: #dddddd;
+    background-color: #fdfdfd;
     font:400 16.5px/1.65 "Lora","Helvetica Neue",Helvetica,Arial,sans-serif;
     border-radius:10px;
     margin-left:auto;
@@ -69,7 +69,7 @@ body {
 
 #doc {
     font-size: 14px;
-    background-color: #dddddd;
+    background-color: #fdfdfd;
     margin-bottom: 2rem;
     margin-left: 2rem;
     margin-right: 2rem;
