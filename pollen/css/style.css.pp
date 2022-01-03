@@ -13,11 +13,15 @@ a {
 }
 
 summary {
-    border-left: 2px solid gray;
+    border-left: 4px solid gray;
+    color: #777777;
+    border-radius: 10px;
+    padding: 10px;
     padding-left:1rem;
-    font-size: 0.7rem;
-    margin-left: 6rem;
-    margin-right: 8rem;
+    font-size: 0.9rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    background: #f0f0f0;
 }
 
 p {
@@ -36,7 +40,7 @@ object.dot {
     margin-left:auto;
     margin-right:auto;
     vertical-align: top;
-    max-width:500px;
+    max-width:400px;
 }
 
 img.latex {
@@ -54,13 +58,13 @@ figcaption.latex {
 
 body {
     background-color: #dddddd;
-    font-family: 'Droid Serif'; 
+    font:400 16.5px/1.65 "Lora","Helvetica Neue",Helvetica,Arial,sans-serif;
     border-radius:10px;
     margin-left:auto;
     margin-right:auto;
     padding-bottom:1rem;
     width:100%;
-    max-width:1000px;
+    max-width: 800px;
 }
 
 #doc {
@@ -76,7 +80,7 @@ body {
     border-radius:10px;
     text-rendering: optimizeLegibility;
     font-feature-settings: 'kern' 1;
-    font-family: 'PT Serif'; 
+    font:400 16.5px/1.65 "Lora","Helvetica Neue",Helvetica,Arial,sans-serif;
     color: #222;
     line-height: 1.4;
 }
@@ -97,8 +101,11 @@ body {
 }
 
 h1, h2, h3 {
-    font-family: 'Yanone Kaffeesatz';
-    font-weight: normal;
+    font:400 "Lora","Helvetica Neue",Helvetica,Arial,sans-serif;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 
 hr {
