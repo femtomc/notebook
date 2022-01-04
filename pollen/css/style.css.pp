@@ -192,7 +192,7 @@ div.quot {
     word-wrap: break-word;
     font-family: julia_mono;
     font-feature-settings: "zero", "ss01";
-    font-size: 13px;
+    font-size: 0.9rem;
     font-variant-ligatures: contextual;
 }
 
