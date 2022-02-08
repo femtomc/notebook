@@ -19,6 +19,7 @@ if [ -n "$*" ]; then
 	msg="$*"
 fi
 cd docs
+rm -rf *
 cp -r ../example/* .
 cd ..
 rm -rf example
