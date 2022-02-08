@@ -9,7 +9,9 @@
   racket/string
   txexpr/base
   sugar/coerce
+  pollen/core
   pollen/unstable/typography
+  pollen/pagetree
   pollen/decode
   pollen/file
   pollen/tag
@@ -44,16 +46,120 @@
 
 (define exclusion-mark-attr '(decode "exclude"))
 (define (root . items)
-  (decode `(decoded-root ,@items)
+  (define title (match (select-from-metas 'title (current-metas))
+                  [#f ""]
+                  [a a]
+                  )
+    )
+  (decode `(decoded-root 
+             (h1 ,title)
+             ,@items)
           #:txexpr-elements-proc detect-paragraphs 
           #:string-proc (compose1 smart-quotes smart-dashes)
           #:exclude-tags '(style script pre)
           #:exclude-attrs (list exclusion-mark-attr)))
 
-(define (title name) `(h1 ,name))
-
 (define (link url . text)
   `(a ((href ,url)) ,@text))
+
+(define (xlink node)
+  (define link (symbol->string node))
+  (define title (select-from-metas 'title (string->symbol link)))
+  `(span ((class "xlink"))
+        (xlink ,link)
+        (a ((class "xlink") (href ,link)) ,title)
+        )
+  )
+
+(define (get-title node)
+  (define m (get-metas node))
+  (let ([c (select-from-metas 'title m)])
+    (case c
+      [(#f) #f]
+      [else c]
+      )
+    )
+  )
+
+(define (get-node-title node)
+  (define m (get-metas node))
+  (let ([c (select-from-metas 'node-title m)])
+    (case c
+      [(#f) #f]
+      [else c]
+      )
+    )
+  )
+
+(define (get-node-id node)
+  (define m (get-metas node))
+  (let ([c (select-from-metas 'node-id m)])
+    (case c
+      [(#f) #f]
+      [else c]
+      )
+    )
+  )
+
+(define (find-xlinks node)
+  (let ([c (select* 'xlink node)])
+    (case c
+      [(#f) #f]
+      [else c]
+      )
+    )
+  )
+
+(define (generate-link-list node)
+  (let ([ls (find-xlinks node)])
+    (case ls
+      [(#f) '()]
+      [else (map 
+              (lambda (n) (let ([title (get-node-title n)])
+                            (case title
+                              [(#f) '()]
+                              [else title]
+                              )
+                            )
+                )
+              ls)
+            ]
+      )
+    )
+  )
+
+(define (generate-link-graph node)
+  (define title (match (get-node-title node)
+                  [#f (get-title node)]
+                  [a a]
+                  )
+    )
+  (define id (number->string (equal-hash-code title)))
+  (define graph-node 
+    (string-append
+      id
+      "[label=\""
+      title
+      "\"];"
+      )
+    )
+  (let ([ls (generate-link-list node)])
+    (case ls
+      [(#f) ""]
+      [else (apply string-append graph-node (map
+                                   (lambda (l)
+                                     (string-append
+                                       id
+                                       "->"
+                                       (number->string (equal-hash-code l))
+                                       ";"
+                                       )
+                                     )
+                                   ls))
+            ]
+      )
+    )
+  )
 
 (define (cols . items)
   `(cols ((style "display:flex;")) ,@items))

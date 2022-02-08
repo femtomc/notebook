@@ -1,8 +1,8 @@
 #lang pollen
 
 ◊(define-meta template "template.html")
-
-◊title{AIDE: towards analyses of inference error}
+◊(define-meta title "AIDE: towards automatic inference tuning")
+◊(define-meta node-title "AIDE: towards automatic\ninference tuning")
 
 ◊link["https://arxiv.org/pdf/1705.07224.pdf"]{AIDE} is a technique for measuring the accuracy of probabilistic inference algorithms by computing an estimator for the symmetric Kullback-Leibler (KL) divergence between the approximating distributions of two inference algorithms. 
 
@@ -56,19 +56,15 @@ For a given ◊i{generative inference model} ◊${(U, X, q)}, a meta-inference a
 
 The interface to meta-inference algorithms requires the ability to sample ◊${u ~ r(u; x)} and evaluate ◊${\xi(u, x)} for specified ◊${u} and ◊${x}.
 
-◊note{
-(◊link["https://arxiv.org/pdf/1705.07224.pdf"]{c.f. section 3.1 of the paper})
-
-Conceptually, a meta-inference sampler tries to answer the question "how could my inference algorithm have produced this output ◊${x}?" 
+(◊link["https://arxiv.org/pdf/1705.07224.pdf"]{c.f. section 3.1 of the paper}) Conceptually, a meta-inference sampler tries to answer the question "how could my inference algorithm have produced this output ◊${x}?" 
 
 Note that if it is tractable to evaluate the marginal likelihood ◊${q(x)} of the generative inference model up to a normalizing constant, then it is not necessary to represent internal random variables for the inference algorithm, and a generative inference model can define the trace as an empty token ◊${u = ()} with ◊${U = \{()\}}. In this case, the meta-inference algorithm has ◊${r(u; x) = 1, \forall x} and ◊${ξ(u, x) = Zq(x)}.
-}
 
 ◊hline
 
 So, what exactly does a generative inference model and meta-inference algorithm look like? 
 
-The authors present a meta-inference algorithm for SMC:
+The authors present a meta-inference algorithm for SMC (which I discuss a bit more in ◊(xlink 'notes/unreasonable_smc.html) and ◊(xlink 'notes/smc_samplers.html)).
 
 ◊fig["assets/aide_smc.png"]{
 Meta-inference sampler for SMC, as presented in ◊link["https://arxiv.org/pdf/1705.07224.pdf"]{Cusumano-Towner and Mansinghka, 2017}.

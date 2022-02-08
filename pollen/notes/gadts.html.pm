@@ -1,8 +1,8 @@
 #lang pollen
 
 ◊(define-meta template "template.html")
-
-◊title{Generalized algebraic data types}
+◊(define-meta title "Generalized algebraic data types")
+◊(define-meta node-title "Generalized algebraic\ndata types")
 
 Key to Haskell's capability of providing the means to construct type-safe embedded domain-specific languages is a concept called ◊em{generalized algebraic data types} (GADTs). I'd like to discuss this briefly -- as understanding this concept turns out to be tremendously useful when experimenting with little languages (for research or otherwise).
 

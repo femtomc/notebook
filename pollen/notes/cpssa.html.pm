@@ -1,8 +1,8 @@
 #lang pollen
 
 ◊(define-meta template "template.html")
-
-◊title{Some thoughts about CPS & SSA}
+◊(define-meta title "Some thoughts about CPS & SSA")
+◊(define-meta node-title "Some thoughts about\nCPS & SSA")
 
 Consider a simple block IR:
 

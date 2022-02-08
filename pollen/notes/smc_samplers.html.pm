@@ -1,8 +1,8 @@
 #lang pollen
 
 ◊(define-meta template "template.html")
-
-◊(title "Notes on sequential Monte Carlo")
+◊(define-meta title "Notes on sequential Monte Carlo")
+◊(define-meta node-title "Notes on sequential\nMonte Carlo")
 
 There is a critical (and still ◊i{highly relevant}) paper on sequential Monte Carlo (SMC) samplers which deserves a read from all those interesting in probabilistic modeling and approximate inference.
 
@@ -61,7 +61,7 @@ This presentation is originally from ◊link["https://www.stats.ox.ac.uk/~doucet
 
 ◊h2{Resample-move SMC}
 
-In this section, I'd like to discuss a modification to the SMC framework discussed above which introduces MCMC steps in between SMC update steps. The resultant algorithm class is profoundly interesting
+In this section, I'd like to discuss a modification to the SMC framework discussed above which introduces MCMC steps in between SMC update steps. The resultant algorithm class is profoundly interesting. I discuss this class in more depth in ◊(xlink 'notes/unreasonable_smc.html).
 
 ◊h2{Relevant works}
 

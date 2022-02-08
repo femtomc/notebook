@@ -1,6 +1,8 @@
 #lang pollen
 
 ◊(define-meta template "template.html")
+◊(define-meta title "Rank statistics and inference calibration")
+◊(define-meta node-title "Rank statistics and\ninference calibration")
 
 ◊title{Rank statistics and inference calibration}
 
