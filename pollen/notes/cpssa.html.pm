@@ -1,9 +1,8 @@
 #lang pollen
 
 ◊(define-meta template "template.html")
-◊(initialize-links-db "Some thoughts about CPS & SSA")
 
-◊h1{Some thoughts about CPS & SSA}
+◊title{Some thoughts about CPS & SSA}
 
 Consider a simple block IR:
 

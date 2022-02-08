@@ -1,9 +1,8 @@
 #lang pollen
 
 ◊(define-meta template "template.html")
-◊(initialize-links-db "The unreasonable effectiveness of rejuvenation move SMC")
 
-◊h1{The unreasonable effectiveness of rejuvenation move SMC}
+◊title{The unreasonable effectiveness of rejuvenation move SMC}
 
 In this note, I'll be covering an approximate inference algorithm design framework which extends SMC with Monte Carlo proposal moves at each step of the algorithm.
 

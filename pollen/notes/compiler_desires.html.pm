@@ -1,9 +1,8 @@
 #lang pollen
 
 ◊(define-meta template "template.html")
-◊(initialize-links-db "Things I want in a compiler")
 
-◊h1{Things I want in a compiler}
+◊title{Things I want in a compiler}
 
 This is going to be a bit of a ramble - (ahead of time warning) I feel like I'm quite a biased programmer. I feel like I complain about language and compiler design features more than your average programmer. I think it's perfectly fine to complain about things like this, especially in programming - where there are strong incentives (tendencies) to settle into ecosystem-based language optima. I suspect the study and usage of programming languages exemplifies the "perfect is the enemy of the good" ethos. Nonetheless, new ideas which radically simplify things will always be attractive to me - even if the cost in a language implementation is that you have to start with a young ecosystem.
 

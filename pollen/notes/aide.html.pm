@@ -1,9 +1,8 @@
 #lang pollen
 
 ◊(define-meta template "template.html")
-◊(initialize-links-db "AIDE")
 
-◊h1{AIDE: towards analyses of inference error}
+◊title{AIDE: towards analyses of inference error}
 
 ◊link["https://arxiv.org/pdf/1705.07224.pdf"]{AIDE} is a technique for measuring the accuracy of probabilistic inference algorithms by computing an estimator for the symmetric Kullback-Leibler (KL) divergence between the approximating distributions of two inference algorithms. 
 

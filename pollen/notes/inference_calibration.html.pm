@@ -1,9 +1,8 @@
 #lang pollen
 
 ◊(define-meta template "template.html")
-◊(initialize-links-db "Rank statistics and inference calibration")
 
-◊h1{Rank statistics and inference calibration}
+◊title{Rank statistics and inference calibration}
 
 Inference calibration encapsulates a set of techniques used to quantify distribution approximation error in Bayesian approximate inference. In the context of Markov chain Monte Carlo (MCMC), a distribution approximation algorithm used extensively by statisticians and probabilistic modelers alike, numerous techniques have been developed to facilitate the process of diagnosing problems with inference (and indeed, convergence of MCMC).
 

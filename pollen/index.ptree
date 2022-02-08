@@ -1,6 +1,4 @@
 #lang pollen
 
-◊index.html{
-    notes/gadts.html
-    notes/cpssa.html
-}
+notes/gadts.html
+notes/cpssa.html

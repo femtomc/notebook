@@ -2,7 +2,9 @@
 
 ◊(define-meta template "template.html")
 
-◊ol{
-    ◊li{◊link["notes/gadts.html"]{Generalized algebraic data types}}
-    ◊li{◊link["notes/cpssa.html"]{Some thoughts about CPS & SSA}}
-}
+◊(require pollen/pagetree)
+
+◊(apply ol (map (lambda (node) `(li (a ((href ,(symbol->string node)))
+        ,(car (select-from-doc 'h1 node)))))
+        (pagetree->list (get-pagetree "index.ptree")))
+)

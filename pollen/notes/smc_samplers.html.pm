@@ -1,9 +1,8 @@
 #lang pollen
 
 ◊(define-meta template "template.html")
-◊(initialize-links-db "Notes on sequential Monte Carlo")
 
-◊h1{Notes on sequential Monte Carlo samplers}
+◊(title "Notes on sequential Monte Carlo")
 
 There is a critical (and still ◊i{highly relevant}) paper on sequential Monte Carlo (SMC) samplers which deserves a read from all those interesting in probabilistic modeling and approximate inference.
 
