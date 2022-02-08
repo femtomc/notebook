@@ -26,7 +26,7 @@
          link
          initialize-links-db
          highlight
-         quot
+         note
          hline
          $
          $$
@@ -64,13 +64,6 @@
 
 (define hline `(hr))
 
-(define (paper-q #:open [open #f] . items)
-  (define div-name (symbol->string (gensym)))
-  `(@
-     (h2 "Paper queue")
-     (ol ,@(decode-paragraphs items 'li)))
-  )
-
 (define (itemize . items)
   `(div ((class "itemize")) 
         (ol ,@(decode-paragraphs items 'li))
@@ -89,5 +82,8 @@
         )
   )
 
-(define (quot . elements)
-  `(div ((class "quot")) ,@elements))
+(define (note . elements)
+  `(div ((class "note")) ,@elements))
+
+(define (fig src . cap) `(figure (img ((src ,src)))
+                               (figcaption ,@cap)))

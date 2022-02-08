@@ -94,7 +94,7 @@ compose k f1 f2 a = (f1 (f2 k) a)
 
 4: (%1) {
     return %1
-}</code></pre></div><p>Above is one example of how this might be represented. It is interesting to study the control flow graph (CFG) of this example.</p><p><object class="dot" data="images/dot_g12984.svg"></object></p><h2>SSA &amp; delimited control</h2><p>One interesting thought experiment is studying a modified block language where blocks also accept label or continuation arguments:</p><div class="highlight"><pre class="code" decode="exclude"><code class="haskell">1: &lt;l&gt; (%1, %2)  {
+}</code></pre></div><p>Above is one example of how this might be represented. It is interesting to study the control flow graph (CFG) of this example.</p><p><object class="dot" data="images/dot_g12980.svg"></object></p><h2>SSA &amp; delimited control</h2><p>One interesting thought experiment is studying a modified block language where blocks also accept label or continuation arguments:</p><div class="highlight"><pre class="code" decode="exclude"><code class="haskell">1: &lt;l&gt; (%1, %2)  {
     %3 = intrinsic_add(%1, %2)
     %4 = intrinsic_add(%3, %3)
     invoke l (%4)
@@ -125,7 +125,7 @@ compose k f1 f2 a = (f1 (f2 k) a)
 2: &lt;&gt; (%1) {
     %3 = intrinsic_add(%1, %1)
     return %3
-}</code></pre></div><p>In the CFG, this causes a “kink”:</p><p><object class="dot" data="images/dot_g12985.svg"></object></p><p>But here, notice that we don’t need to restore the entire stack frame - just the part which is captured by the bounds of the resumption.</p><p>There is a series of concepts (as far as I can tell, first explored in Lisp) called control operators and delimited control which refer to the same sort of “capturing” mechanism.</p><div class="highlight"><pre class="code" decode="exclude"><code class="haskell">(* 2 (reset (+ 1 (shift k (k 5)))))</code></pre></div><p>In this code, the operators <span class="code" decode="exclude">shift</span> and <span class="code" decode="exclude">reset</span> set limits on what is captured into the continuation <span class="code" decode="exclude">k</span>. Here, the continuation <span class="code" decode="exclude">\k . (+ 1 k)</span> is captured and then immediately applied.</p><div class="highlight"><pre class="code" decode="exclude"><code class="haskell">(* 2 (reset (+ 1 (shift k (k 5)))))
+}</code></pre></div><p>In the CFG, this causes a “kink”:</p><p><object class="dot" data="images/dot_g12981.svg"></object></p><p>But here, notice that we don’t need to restore the entire stack frame - just the part which is captured by the bounds of the resumption.</p><p>There is a series of concepts (as far as I can tell, first explored in Lisp) called control operators and delimited control which refer to the same sort of “capturing” mechanism.</p><div class="highlight"><pre class="code" decode="exclude"><code class="haskell">(* 2 (reset (+ 1 (shift k (k 5)))))</code></pre></div><p>In this code, the operators <span class="code" decode="exclude">shift</span> and <span class="code" decode="exclude">reset</span> set limits on what is captured into the continuation <span class="code" decode="exclude">k</span>. Here, the continuation <span class="code" decode="exclude">\k . (+ 1 k)</span> is captured and then immediately applied.</p><div class="highlight"><pre class="code" decode="exclude"><code class="haskell">(* 2 (reset (+ 1 (shift k (k 5)))))
 -- =&gt; k == \x . (+ 1 x)
 -- -&gt; (* 2 (k 5))
 -- -&gt; (* 2 (\x . (+ 1 x) 5))

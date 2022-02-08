@@ -19,20 +19,37 @@ summary {
     padding: 10px;
     padding-left:1rem;
     font-size: 0.9rem;
-    margin-left: 3rem;
-    margin-right: 3rem;
     background: #f0f0f0;
 }
 
-p {
-    margin-left:1rem;
-    margin-right:1rem;
-    padding-left:2rem;
-    padding-right:2rem;
+div.note {
+    border-left: 2px solid gray;
+    color: #777777;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 1rem;
+    font-size: 0.9rem;
+    background: #f0f0f0;
 }
+
 
 figure.latex {
     display: inline-block;
+}
+
+figure { 
+    padding: 4px;
+    margin: auto;
+    max-width: 100%;
+}
+
+figcaption {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    text-align: center;
+    font-size: 0.9rem;
 }
 
 object.dot {
@@ -43,8 +60,10 @@ object.dot {
     max-width:400px;
 }
 
-img.latex {
-    vertical-align: top;
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     max-width: 100%;
 }
 
@@ -100,23 +119,13 @@ body {
     text-align:center;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
     font:400 "Lora","Helvetica Neue",Helvetica,Arial,sans-serif;
-    margin-left: 1rem;
-    margin-right: 1rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
 }
 
 hr {
     margin-top: 2rem;
     margin-bottom: 2rem;
-}
-
-div.itemize {
-    margin-left:6rem;
-    margin-right:6rem;
-    max-width: 80%;
 }
 
 li::marker {
@@ -159,24 +168,9 @@ div.highlight {
     font-feature-settings: "zero", "ss01";
     font-variant-ligatures: contextual;
     background-color: #f0f0f0;
-    margin-left: 3rem;
-    margin-right: 3rem;
     padding-left: 1rem;
     padding-right: 1rem;
     border-radius: 10px;
-}
-
-div.quot {
-    font-size: 1.0rem;
-    background-color: #f0f0f0;
-    margin-left: 4rem;
-    margin-right: 4rem;
-    padding-top:0.5rem;
-    padding-bottom:0.5rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    border-radius: 10px;
-    font-style: italic;
 }
 
 ◊|code-tag|.◊|code-class| {
