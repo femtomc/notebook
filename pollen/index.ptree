@@ -1,11 +1,9 @@
 #lang pollen
 
-◊index.html{
-    notes/gadts.html
-    notes/cpssa.html
-    notes/smc_samplers.html
-    notes/unreasonable_smc.html
-    notes/compiler_desires.html
-    notes/aide.html
-    notes/inference_calibration.html
-}
+notes/gadts.html
+notes/cpssa.html
+notes/smc_samplers.html
+notes/unreasonable_smc.html
+notes/compiler_desires.html
+notes/aide.html
+notes/inference_calibration.html
