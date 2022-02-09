@@ -25,7 +25,7 @@ MathJax = {
 <link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
 </head>
 <body>
-<form id="search" action="/search.html" method="get">
+<form id="search" action="./search.html" method="get">
 <label for="search-input" hidden="">Search site</label>
 <input type="text" id="search-input" name="query" placeholder="Type here to search">
 <input type="submit" value="search">
