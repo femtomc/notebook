@@ -34,10 +34,13 @@ MathJax = {
 <div class="grid-container">
     <div class="grid">
         <div class="page wide">
-            <ul id="results">No results found.</ul>
+            <ol id="results">
+            <h3>No results found.</h3>
+            </ol>
         </div>
     </div>
 </div>
+<hr>
 </body>
 <script src="assets/js/lunr.min.js" type="text/javascript"></script>
 <script src="assets/js/search.js" type="text/javascript"></script>

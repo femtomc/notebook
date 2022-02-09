@@ -10,8 +10,6 @@ function displayResults(results, store) {
                 '<li><a href="./' + item.id + '">' + item.title + "</a>";
         }
         searchResults.innerHTML = resultList;
-    } else {
-        searchResults.innerHTML = "No results found.";
     }
 }
 
