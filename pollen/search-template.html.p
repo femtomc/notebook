@@ -38,7 +38,7 @@ MathJax = {
 </div>
 <div id="doc">
     <ol id="results">
-    <h3>No results found.</h3>
+    <h3>No results found</h3>
     </ol>
 <hr>
 </div>
