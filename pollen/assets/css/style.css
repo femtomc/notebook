@@ -1,5 +1,3 @@
-#lang pollen
-
 a {
     text-decoration: none;
     color: #bd1f1f;
@@ -38,7 +36,7 @@ figure.latex {
     display: inline-block;
 }
 
-figure { 
+figure {
     padding: 4px;
     margin: auto;
     max-width: 100%;
@@ -59,6 +57,15 @@ object.dot {
     margin-right:auto;
     vertical-align: top;
     max-width: 100%;
+}
+
+#search {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top:0.5rem;
+    margin-bottom: 0rem;
 }
 
 img {
@@ -182,7 +189,7 @@ div.highlight {
     border-radius: 10px;
 }
 
-◊|code-tag|.◊|code-class| {
+span.code {
     padding: 0.1rem;
     font-family: julia_mono;
     font-size: 13px;

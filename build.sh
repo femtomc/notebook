@@ -13,6 +13,7 @@ rm css/*.css
 rm *.html
 rm -rf notes/images
 rm -rf notes/latex
+rm -rf images
 cd ..
 msg="Rebuilding example - $(date)"
 if [ -n "$*" ]; then

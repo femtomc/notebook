@@ -25,8 +25,8 @@ MathJax = {
 @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
 @import url(https://fonts.googleapis.com/css2?family=PT+Serif&display=swap);
 </style>
-<link rel="stylesheet" type="text/css" href="../css/fonts.css"/>
-<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+<link rel="stylesheet" type="text/css" href="../assets/css/fonts.css"/>
+<link rel="stylesheet" type="text/css" href="../assets/css/style.css"/>
 </head>
 <body>
 <div id="doc"><h1>Generalized algebraic data types</h1><p>Key to Haskell’s capability of providing the means to construct type-safe embedded domain-specific languages is a concept called <em>generalized algebraic data types</em> (GADTs). I’d like to discuss this briefly–as understanding this concept turns out to be tremendously useful when experimenting with little languages (for research or otherwise).</p><p>In Haskell, users are allowed to specify data types which are parametrized by type parameters:</p><div class="highlight"><pre class="code" decode="exclude"><code class="haskell">data List a = Nil | Cons a (List a)</code></pre></div><p>Now, when I construct an inhabitant of this type, the parameters are inferred automatically:</p><div class="highlight"><pre class="code" decode="exclude"><code class="haskell">-- Typed as List Int

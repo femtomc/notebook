@@ -25,8 +25,8 @@ MathJax = {
 @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
 @import url(https://fonts.googleapis.com/css2?family=PT+Serif&display=swap);
 </style>
-<link rel="stylesheet" type="text/css" href="../css/fonts.css"/>
-<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+<link rel="stylesheet" type="text/css" href="../assets/css/fonts.css"/>
+<link rel="stylesheet" type="text/css" href="../assets/css/style.css"/>
 </head>
 <body>
 ◊(->html #:tag 'div #:attrs '((id "doc")) doc)

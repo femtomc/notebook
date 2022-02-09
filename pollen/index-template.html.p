@@ -21,10 +21,16 @@ MathJax = {
 @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
 @import url(https://fonts.googleapis.com/css2?family=PT+Serif&display=swap);
 </style>
-<link rel="stylesheet" type="text/css" href="css/fonts.css"/>
-<link rel="stylesheet" type="text/css" href="css/style.css"/>
+<link rel="stylesheet" type="text/css" href="assets/css/fonts.css"/>
+<link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
 </head>
 <body>
+<form id="search" method="get">
+<label for="search-input" hidden="">Search site</label>
+<input type="text" id="search-input" name="query" placeholder="Type here to search">
+<input type="submit" value="search">
+<div></div>
+</form>
 ◊(->html #:tag 'div #:attrs '((id "doc")) doc)
 </body>
 </html>

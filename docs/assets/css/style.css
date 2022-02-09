@@ -59,6 +59,15 @@ object.dot {
     max-width: 100%;
 }
 
+#search {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top:0.5rem;
+    margin-bottom: 0rem;
+}
+
 img {
     display: block;
     margin-left: auto;

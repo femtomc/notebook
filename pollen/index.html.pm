@@ -1,9 +1,8 @@
 #lang pollen
 
-◊(define-meta template "template.html")
+◊(define-meta template "index-template.html")
 
 ◊(require pollen/pagetree)
-
 
 ◊note{This is a small knowledge base / personal wiki of notes and writings. The directed graph represents the wiki: the nodes are individual notes (or ◊i{zettel}, in ◊i{zettelkasten} style) and the directed edges are forward links from note to note.
 
