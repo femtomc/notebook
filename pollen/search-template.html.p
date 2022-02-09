@@ -31,6 +31,8 @@ MathJax = {
 <input type="submit" value="search">
 <div></div>
 </form>
-<div id="doc"><h1></h1><div class="note"><p>This is a small knowledge base / personal wiki of notes and writings. The directed graph represents the wiki: the nodes are individual notes (or <i>zettel</i>, in <i>zettelkasten</i> style) and the directed edges are forward links from note to note.</p><h4>No claims are made as to the completeness of any of these zettels!</h4></div><p><object class="dot" data="images/dot_g5287.svg"></object></p><hr/><ol><li><a href="notes/gadts.html">Generalized algebraic data types</a></li><li><a href="notes/cpssa.html">Some thoughts about CPS &amp; SSA</a></li><li><a href="notes/smc_samplers.html">Notes on sequential Monte Carlo</a></li><li><a href="notes/unreasonable_smc.html">The unreasonable effectiveness of rejuvenation move SMC</a></li><li><a href="notes/compiler_desires.html">Feelings about language and compiler implementations</a></li><li><a href="notes/aide.html">AIDE: towards automatic inference tuning</a></li><li><a href="notes/inference_calibration.html">Rank statistics and inference calibration</a></li></ol></div>
+◊(->html #:tag 'div #:attrs '((id "doc")) doc)
 </body>
+<script src="assets/js/lunr.min.js" type="text/javascript"></script>
+<script src="assets/js/search.hs" type="text/javascript"></script>
 </html>
