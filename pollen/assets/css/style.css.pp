@@ -12,36 +12,56 @@ a {
   height: 15rem;
 }
 
+div.header {
+  display: flex;
+  align-items: center;
+  background: #fff;
+}
+
+#logo {
+  display: inline-block;
+  margin-left: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top:0.5rem;
+  margin-bottom: 0rem;
+}
+
+#logo svg {
+width: 30px;
+height: 30px;
+}
+
 summary {
     border-left: 4px solid gray;
-    color: #777777;
-    border-radius: 10px;
-    padding: 10px;
-    padding-left:1rem;
-    font-size: 0.9rem;
-    background: #f0f0f0;
+color: #777777;
+       border-radius: 10px;
+padding: 10px;
+         padding-left:1rem;
+         font-size: 0.9rem;
+background: #f0f0f0;
 }
 
 div.note {
     border-left: 2px solid gray;
-    color: #777777;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    font-size: 0.9rem;
-    background: #f0f0f0;
+color: #777777;
+       padding-top: 10px;
+       padding-bottom: 10px;
+       padding-left: 1rem;
+       padding-right: 1rem;
+       font-size: 0.9rem;
+background: #f0f0f0;
 }
 
 
 figure.latex {
-    display: inline-block;
+display: inline-block;
 }
 
 figure { 
-    padding: 4px;
-    margin: auto;
-    max-width: 100%;
+padding: 4px;
+margin: auto;
+        max-width: 100%;
 }
 
 figcaption {
@@ -54,18 +74,15 @@ figcaption {
 }
 
 object.dot {
-    display: block;
-    margin-left:auto;
-    margin-right:auto;
-    vertical-align: top;
-    max-width: 100%;
+display: block;
+         margin-left:auto;
+         margin-right:auto;
+         vertical-align: top;
+         max-width: 100%;
 }
 
 #search {
-    margin-left: 2rem;
     margin-right: 2rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
     padding-top:0.5rem;
     margin-bottom: 0rem;
 }
@@ -87,13 +104,13 @@ figcaption.latex {
 
 body {
     background-color: #fdfdfd;
-    font:400 16.5px/1.65 "Lora","Helvetica Neue",Helvetica,Arial,sans-serif;
-    border-radius:10px;
-    margin-left:auto;
-    margin-right:auto;
-    padding-bottom:1rem;
-    width:100%;
-    max-width: 800px;
+font:400 16.5px/1.65 "Lora","Helvetica Neue",Helvetica,Arial,sans-serif;
+     border-radius:10px;
+     margin-left:auto;
+     margin-right:auto;
+     padding-bottom:1rem;
+width:100%;
+      max-width: 800px;
 }
 
 #doc {
@@ -109,36 +126,36 @@ body {
     border-radius:10px;
     text-rendering: optimizeLegibility;
     font-feature-settings: 'kern' 1;
-    font:400 16.5px/1.65 "Lora","Helvetica Neue",Helvetica,Arial,sans-serif;
-    color: #222;
-    line-height: 1.4;
+font:400 16.5px/1.65 "Lora","Helvetica Neue",Helvetica,Arial,sans-serif;
+color: #222;
+       line-height: 1.4;
 }
 
 #navtable {
-    display:flex;
-    flex-wrap:nowrap;
-    opacity: 1;
-    z-index: 1;
-    height: 3.5rem;
+display:flex;
+        flex-wrap:nowrap;
+opacity: 1;
+         z-index: 1;
+height: 3.5rem;
 }
 
 .box-link {
     text-decoration: none;
     font-size:45px;
-    flex:35%;
-    text-align:center;
+flex:35%;
+     text-align:center;
 }
 
 title, h1, h2, h3, h4 {
-    font:400 "Lora","Helvetica Neue",Helvetica,Arial,sans-serif;
+font:400 "Lora","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
 div.xlink {
-    display: inline
+display: inline
 }
 
 xlink {
-    display: none;
+display: none;
 }
 
 hr {
@@ -152,33 +169,33 @@ li::marker {
 }
 
 .theorem {
-    display: block;
-    font-style: italic;
+display: block;
+         font-style: italic;
 }
 
 .theorem:before {
-    content: "Theorem. ";
-    font-weight: bold;
-    font-style: normal;
+content: "Theorem. ";
+         font-weight: bold;
+         font-style: normal;
 }
 
 .theorem[text]:before {
-    content: "Theorem (" attr(text) ") ";
+content: "Theorem (" attr(text) ") ";
 }
 
 .definition {
-    display: block;
-    font-style: italic;
+display: block;
+         font-style: italic;
 }
 
 .definition:before {
-    content: "Definition. ";
-    font-weight: bold;
-    font-style: normal;
+content: "Definition. ";
+         font-weight: bold;
+         font-style: normal;
 }
 
 .definition[text]:before {
-    content: "Definition (" attr(text) ") ";
+content: "Definition (" attr(text) ") ";
 }
 
 div.highlight {
@@ -192,11 +209,11 @@ div.highlight {
 }
 
 ◊|code-tag|.◊|code-class| {
-    padding: 0.1rem;
-    font-family: julia_mono;
-    font-size: 13px;
-    font-feature-settings: "zero", "ss01";
-    font-variant-ligatures: contextual;
+padding: 0.1rem;
+         font-family: julia_mono;
+         font-size: 13px;
+         font-feature-settings: "zero", "ss01";
+         font-variant-ligatures: contextual;
 }
 
 .hljs {

@@ -5,7 +5,7 @@
 ◊(require pollen/pagetree)
 ◊(require json)
 
-◊note{This is a small knowledge base / personal wiki of notes and writings. The directed graph represents the wiki: the nodes are individual notes (or ◊i{zettel}, in ◊i{zettelkasten} style) and the directed edges are forward links from note to note.
+◊note{This is a small knowledge base / personal wiki of notes and writings, ◊link["https://github.com/jethrokuan/braindump"]{inspired by Jethro Kuan's braindump}. The directed graph represents the wiki: the nodes are individual notes (or ◊i{zettel}, in ◊i{zettelkasten} style) and the directed edges are forward links from note to note.
 
 ◊h4{No claims are made as to the completeness of any of these zettels!}
 }
