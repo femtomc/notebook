@@ -1,6 +1,6 @@
 <div align="center">
 <h1><code>notebook</code></h1>
-<figure style="height:300px;width:300px">
+<figure style="display:block;height:300px;width:300px">
 <img src="frontmatter.png" style="display:block;height:300px;width:300px"></img>
 <figcaption>
 <a href="https://femtomc.github.io/notebook/">(Demo) my personal notebook</a>
