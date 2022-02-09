@@ -65,10 +65,11 @@
 
 (define (xlink node)
   (define link (symbol->string node))
+  (define href (string-append "../" (symbol->string node)))
   (define title (select-from-metas 'title (string->symbol link)))
   `(span ((class "xlink"))
         (xlink ,link)
-        (a ((class "xlink") (href ,link)) ,title)
+        (a ((class "xlink") (href ,href)) ,title)
         )
   )
 

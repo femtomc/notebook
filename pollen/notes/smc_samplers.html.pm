@@ -16,7 +16,13 @@ Sampling from probability distributions is a commonly desired operation in proba
 
 Practitioners have constructed clever approximation techniques to get around these limitations, including Monte Carlo methods - algorithms which internally use randomness to approximately perform optimization, numerical integration, and sampling from target probability distributions. 
 
-Sequential Monte Carlo is one such method with a unique set of computational trade offs.
+Sequential Monte Carlo (SMC) is one such method with a unique set of computational trade offs compared to other approximate inference techniques. One way of understanding sequential Monte Carlo steps is as incremental importance sampling, where particle populations are evolved and re-weighted at each step - including the effects of conditioning on new observations. Formally, SMC allows us to think about the transition:
+
+◊$${
+    P(\vec{z}_t | \vec{x_t}) \rightarrow P(\vec{z}_{t + 1} | \vec{x}_{t + 1})
+}
+
+if I have a particle representation of the LHS, I can perform an SMC update to target the RHS.
 
 ◊h2{Comparison to Markov chain Monte Carlo}
 
@@ -49,7 +55,20 @@ Traditionally, SMC algorithms were developed to solve dynamical systems filterin
 P(X_0, X_1, X_2, Y_0, Y_1, Y_2) = P(X_0) \prod_{i = 0} P(X_{i + 1} | X_i)P(Y_i | X_i)
 }
 
-Now, from this joint, we could ask questions about the "filtering distributions" ◊${P(X_0 | Y_0)}, ◊${P(X_1 | Y_0, Y_1)}, ◊${P(X_2 | Y_0, Y_1, Y_2)} in turn.
+Now, from this joint, we could use SMC to compute approximations to the sequence of distributions ◊${P(X_0 | Y_0)}, ◊${P(X_0, X_1| Y_0, Y_1)}, ◊${P(X_0, X_1, X_2| Y_0, Y_1, Y_2)} in turn.
+
+◊$${
+\begin{aligned}
+T_0^i &\sim Q(T_0; Y_0), \hat{w}_0^i = \frac{P(T_0^i, Y_0)}{Q(T_0^i)}\\
+T_t^i &\sim Q(T_{t - 1}^i; Y_t), \hat{w}_t^i = \frac{P(T_t^i,..., T_0^i, Y_t,...,Y_0)}{Q(T_t^i)}
+\end{aligned}
+}
+
+where ◊${T_t^i} stands for the ◊i{i}-th sample representation of the latent space at time step ◊${t}. The "importance weight" (from importance sampling) of particle ◊${i} at time step ◊${t} is ◊${\hat{w}_t} is the pointwise evaluation of the ◊link["https://en.wikipedia.org/wiki/Radon%E2%80%93Nikodym_theorem#Radon%E2%80%93Nikodym_derivative"]{Radon-Nikodym derivative} of the measure associated with the model density ◊${P} and the measure associated with the proposal density ◊${Q}. 
+
+◊note{I discuss Radon-Nikodym derivatives in ◊(xlink 'notes/math_is.html), but also see the Wikipedia page linked above.}
+
+From the importance weights, it's easy to spot the "absolute continuity" condition: ◊${Q} can't assign zero probability to a primitive set that ◊${P} assigns non-zero probability.
 
 This presentation is originally from ◊link["https://www.stats.ox.ac.uk/~doucet/doucet_defreitas_gordon_smcbookintro.pdf"]{Doucet, de Freitas, and Gordon}. This presentation should also be praised for treatment of Monte Carlo sampling in general (and in computational comparison with techniques like numerical integration).
 

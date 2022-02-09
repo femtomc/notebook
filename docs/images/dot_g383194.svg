@@ -32,10 +32,9 @@
 <!-- 508565895565942783 -->
 <g id="node3" class="node">
 <title>508565895565942783</title>
-<g id="a_node3"><a xlink:href="../notes/math_is.html" xlink:title="The mathematical foundations&#10;of importance sampling" target="_blank">
+<g id="a_node3"><a xlink:href="../notes/math_is.html" xlink:title="The mathematical foundations of importance sampling" target="_blank">
 <polygon fill="lightgrey" stroke="black" points="387,-36 229,-36 229,0 387,0 387,-36"/>
-<text text-anchor="middle" x="308" y="-21.4" font-family="Times,serif" font-size="12.00">The mathematical foundations</text>
-<text text-anchor="middle" x="308" y="-8.4" font-family="Times,serif" font-size="12.00">of importance sampling</text>
+<text text-anchor="middle" x="308" y="-14.9" font-family="Times,serif" font-size="12.00">The mathematical foundations of importance sampling</text>
 </a>
 </g>
 </g>

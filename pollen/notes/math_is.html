@@ -1,0 +1,36 @@
+<html>
+<head>
+<title>McCoy R. Becker</title>
+<meta name="robots" content="no index, nofollow" charset="utf-8">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']]
+  },
+  svg: {
+    fontCache: 'global'
+  }
+};
+</script>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+<link rel="stylesheet"
+      href="../highlight/styles/default.min.css">
+<script src="../highlight/highlight.min.js"></script>
+<script src="../highlight/languages/haskell.min.js"></script>
+<style>
+@import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+@import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
+@import url(https://fonts.googleapis.com/css2?family=PT+Serif&display=swap);
+</style>
+<link rel="stylesheet" type="text/css" href="../assets/css/fonts.css"/>
+<link rel="stylesheet" type="text/css" href="../assets/css/style.css"/>
+</head>
+<body>
+<div id="doc"><h1>The mathematical foundations of importance sampling</h1><p>Probabilistic modeling and inference deals with probability distributions - mathematical objects which are formally equivalent to <a href="https://en.wikipedia.org/wiki/Measure_(mathematics)">measures</a>.</p><p>A measure <mathjax>$\mu$</mathjax> is a non-negative map from a set <mathjax>$X$</mathjax> equipped with a <a href="https://en.wikipedia.org/wiki/%CE%A3-algebra"><mathjax>$\sigma$</mathjax>-algebra</a> (denoted <mathjax>$\Sigma$</mathjax>) to <mathjax>$\mathbb{R}$</mathjax> which satisfies a few properties (all stated with respect to the underlying <mathjax>$\sigma$</mathjax>-algebra).</p><div class="itemize"><ol><li><b>Non-negativity</b>: as already stated, for all elements <mathjax>$E$</mathjax> of <mathjax>$\Sigma$</mathjax>, <mathjax>$\mu(E) \geq 0$</mathjax>.</li><li><b>Null goes to 0</b>: <mathjax>$\mu(\phi) = 0$</mathjax></li><li><b>Countable additivity</b>: for all countable collections <mathjax>$\{E_k\}_{k=1}^\infty$</mathjax> of pairwise disjoint sets in <mathjax>$\Sigma$</mathjax>, <mathjax>$\mu(\cup_{k=1}^\infty E_k) = \sum_{k = 1}^\infty \mu(E_k)$</mathjax>.</li></ol></div><p>The full triple <mathjax>$(X, \Sigma, \mu)$</mathjax> is called a <i>measure space</i>. Probablity measures are measures with an additional property: <mathjax>$\mu(X) = 1$</mathjax>.</p><p>Useful to know - but we often work with <i>densities</i> or <i>probability mass functions</i>. How do these objects arise?</p><p>Probability mass functions arise when considering probability measures over discrete or countably infinite spaces - in this case, we generally are working with the measure directly! E.g. evaluating the query “what is the probability of the random variable taking value <i>this primitive set</i>" means evaluating the measure on that primitive set (which, by construction, is in the <mathjax>$\sigma$</mathjax>-algebra).</p><p>Density functions arise when considering probability measures over <mathjax>$\mathbb{R}$</mathjax> or <mathjax>$\mathbb{R}^N$</mathjax>. To understand how they arise, it is important to understand that there is a “canonical” measure on <mathjax>$\mathbb{R}^N$</mathjax> - the <a href="https://en.wikipedia.org/wiki/Lebesgue_measure"><i>Lebesgue measure</i></a>. Here, I’m implicitly hiding the <mathjax>$\sigma$</mathjax>-algebra - which requires more discussion. Buying the construction of the Lebesgue measure for the moment, we can construct new measures from an existing reference measure by writing a non-negative function <mathjax>$f: \mathbb{R}^N \rightarrow \mathbb{R}$</mathjax> and expressing our new measure as the integral of this function using the reference measure over measurable subsets of the triple <mathjax>$(\mathbb{R}^N, \Sigma, \mu)$</mathjax>:</p><p><mathjax>\begin{equation}\nu(A) = \int_A f \ d\mu\end{equation}</mathjax></p><p>This non-negative function is called a <i>density</i> - these functions are the objects which we are accustomed to working with.</p></div>
+</script>
+</body>
+<script>hljs.highlightAll();</script>
+</html>
