@@ -36,16 +36,12 @@ MathJax = {
 <div></div>
 </form>
 </div>
-<div class="grid-container">
-    <div class="grid">
-        <div class="page wide">
-            <ol id="results">
-            <h3>No results found.</h3>
-            </ol>
-        </div>
-    </div>
-</div>
+<div id="doc">
+    <ol id="results">
+    <h3>No results found.</h3>
+    </ol>
 <hr>
+</div>
 </body>
 <script src="assets/js/lunr.min.js" type="text/javascript"></script>
 <script src="assets/js/search.js" type="text/javascript"></script>
