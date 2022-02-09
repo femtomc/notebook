@@ -6,6 +6,7 @@ rm -rf notes/images
 rm -rf notes/latex
 raco pollen render -r .
 raco pollen render index.html.pm
+raco pollen render search.html.pm
 rm notes/*.db
 raco pollen publish . $(pwd)/../example
 raco pollen reset
