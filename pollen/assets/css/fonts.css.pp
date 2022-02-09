@@ -6,7 +6,7 @@
     font-weight: normal;
     font-stretch: normal;
     font-display: auto;
-src: url('../assets/fonts/JuliaMono-Regular.ttf') format('truetype');
+src: url('../fonts/JuliaMono-Regular.ttf') format('truetype');
 }
 
 @font-face {
@@ -15,7 +15,7 @@ src: url('../assets/fonts/JuliaMono-Regular.ttf') format('truetype');
     font-weight: normal;
     font-stretch: normal;
     font-display: auto;
-src: url('../assets/fonts/concourse_index_regular.woff2') format('woff2');
+src: url('../fonts/concourse_index_regular.woff2') format('woff2');
 }
 
 @font-face {
@@ -24,7 +24,7 @@ src: url('../assets/fonts/concourse_index_regular.woff2') format('woff2');
     font-weight: normal;
     font-stretch: normal;
     font-display: auto;
-src: url('../assets/fonts/concourse_index_regular.woff2') format('woff2');
+src: url('../fonts/concourse_index_regular.woff2') format('woff2');
 }
 
 @font-face {
