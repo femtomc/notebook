@@ -1,12 +1,14 @@
 <div align="center">
 <h1><code>notebook</code></h1>
-<figure style="display:block;height:300px;width:300px">
-<img src="frontmatter.png" style="display:block;height:300px;width:300px"></img>
-<figcaption>
 <a href="https://femtomc.github.io/notebook/">(Demo) my personal notebook</a>
-</figcaption>
-</figure>
 </div>
+<br>
+
+<p align="center">
+<img src="frontmatter.png" style="display:block;height:300px;width:300px"></img>
+</p>
+
+
 <br>
 
 > A `pollen`-like site template which supports the development of small knowledge bases and personal wikis. Sports extreme customization courtesy of `pollen`.
