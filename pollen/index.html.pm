@@ -11,7 +11,8 @@
 
 ◊(dot (apply string-append 
     "rankdir=TD;"
-    "node [margin=0 fontsize=10 width=2 fixedsize=true shape=rect style=filled]";
+    "node [margin=0 fontsize=12 width=2.2 fixedsize=true 
+           shape=rect style=filled];"
     (map generate-link-graph 
     (pagetree->list (get-pagetree "index.ptree")))))
 
