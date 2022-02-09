@@ -1,14 +1,17 @@
 <div align="center">
 <h1><code>notebook</code></h1>
-<figure>
-<img src="frontmatter.png" style="max-width:400px"></img>
+<figure style="max-width:300px">
+<img src="frontmatter.png"></img>
 <figcaption>
 <a href="https://femtomc.github.io/notebook/">(Demo) my personal notebook</a>
 </figcaption>
 </figure>
 </div>
+<br>
 
 > A `pollen`-like site template which supports the development of small knowledge bases and personal wikis. Sports extreme customization courtesy of `pollen`.
+
+<br>
 
 This was inspired by [org-roam](https://github.com/org-roam/org-roam) and [Jethro Kuan's braindump](https://github.com/jethrokuan/braindump) quite a bit -- but I found that I enjoyed using `pollen` and Racket for customizeability compared to Emacs Lisp. In particular, this does not restrict the notebook file format to `org`-like Markdown - but allows all the benefits [of using pollen](https://docs.racket-lang.org/pollen/second-tutorial.html#%28part._the-case-against-markdown%29).
 
