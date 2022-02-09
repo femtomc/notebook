@@ -34,5 +34,5 @@ MathJax = {
 ◊(->html #:tag 'div #:attrs '((id "doc")) doc)
 </body>
 <script src="assets/js/lunr.min.js" type="text/javascript"></script>
-<script src="assets/js/search.hs" type="text/javascript"></script>
+<script src="assets/js/search.js" type="text/javascript"></script>
 </html>
