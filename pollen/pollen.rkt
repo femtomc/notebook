@@ -138,7 +138,11 @@
   (define graph-node 
     (string-append
       id
-      "[label=\""
+      "[target=\"_blank\" "
+      "href=\"../"
+      (symbol->string node)
+      "\" "
+      "label=\""
       title
       "\"];"
       )

@@ -28,6 +28,7 @@ div.note {
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 1rem;
+    padding-right: 1rem;
     font-size: 0.9rem;
     background: #f0f0f0;
 }
@@ -57,7 +58,7 @@ object.dot {
     margin-left:auto;
     margin-right:auto;
     vertical-align: top;
-    max-width:80%;
+    max-width: 100%;
 }
 
 img {
