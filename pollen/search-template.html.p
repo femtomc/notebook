@@ -31,7 +31,13 @@ MathJax = {
 <input type="submit" value="search">
 <div></div>
 </form>
-◊(->html #:tag 'div #:attrs '((id "doc")) doc)
+<div class="grid-container">
+    <div class="grid">
+        <div class="page wide">
+            <ul id="results">No results found.</ul>
+        </div>
+    </div>
+</div>
 </body>
 <script src="assets/js/lunr.min.js" type="text/javascript"></script>
 <script src="assets/js/search.js" type="text/javascript"></script>

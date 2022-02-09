@@ -7,6 +7,7 @@
   scribble/xref
   rackunit
   racket/string
+  racket/list
   txexpr/base
   sugar/coerce
   pollen/core
@@ -69,6 +70,12 @@
         (xlink ,link)
         (a ((class "xlink") (href ,link)) ,title)
         )
+  )
+
+(define (get-description node)
+  (let ([doc (get-doc node)])
+    (apply string-append (filter string? (flatten doc)))
+    )
   )
 
 (define (get-title node)
