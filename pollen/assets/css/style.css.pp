@@ -14,6 +14,7 @@ a {
 
 div.header {
   display: flex;
+  font-size: 0.9rem;
   align-items: center;
   background: #fff;
 }
@@ -23,8 +24,8 @@ div.header {
   margin-left: 2rem;
   padding-left: 1rem;
   padding-right: 1rem;
-  padding-top:0.5rem;
   margin-bottom: 0rem;
+  padding-top:1rem;
 }
 
 #logo svg {
@@ -83,8 +84,8 @@ display: block;
 
 #search {
     margin-right: 2rem;
-    padding-top:0.5rem;
     margin-bottom: 0rem;
+    padding-top: 1rem;
 }
 
 img {
