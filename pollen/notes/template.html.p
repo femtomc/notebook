@@ -14,12 +14,12 @@ MathJax = {
 };
 </script>
 <script type="text/javascript" id="MathJax-script" async
-  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+  src="../assets/js/mathjax3-tex-svg.js">
 </script>
 <link rel="stylesheet"
-      href="../highlight/styles/default.min.css">
-<script src="../highlight/highlight.min.js"></script>
-<script src="../highlight/languages/haskell.min.js"></script>
+      href="../assets/js/highlight/styles/default.min.css">
+<script src="../assets/js/highlight/highlight.min.js"></script>
+<script src="../assets/js/highlight/languages/haskell.min.js"></script>
 <style>
 @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
 @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);

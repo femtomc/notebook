@@ -115,7 +115,6 @@ width:100%;
 }
 
 #doc {
-    font-size: 14px;
     background-color: #fdfdfd;
     margin-bottom: 2rem;
     margin-left: 2rem;
@@ -127,36 +126,36 @@ width:100%;
     border-radius:10px;
     text-rendering: optimizeLegibility;
     font-feature-settings: 'kern' 1;
-font:400 16.5px/1.65 "Lora","Helvetica Neue",Helvetica,Arial,sans-serif;
-color: #222;
-       line-height: 1.4;
+    font:400 1.0rem "Lora","Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: #222;
+    line-height: 1.4;
 }
 
 #navtable {
-display:flex;
-        flex-wrap:nowrap;
-opacity: 1;
-         z-index: 1;
-height: 3.5rem;
+    display:flex;
+    flex-wrap:nowrap;
+    opacity: 1;
+    z-index: 1;
+    height: 3.5rem;
 }
 
 .box-link {
     text-decoration: none;
     font-size:45px;
-flex:35%;
-     text-align:center;
+    flex:35%;
+    text-align:center;
 }
 
 title, h1, h2, h3, h4 {
-font:400 "Lora","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font:400 "Lora","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
 div.xlink {
-display: inline
+    display: inline
 }
 
 xlink {
-display: none;
+    display: none;
 }
 
 hr {
@@ -170,33 +169,33 @@ li::marker {
 }
 
 .theorem {
-display: block;
-         font-style: italic;
+    display: block;
+    font-style: italic;
 }
 
 .theorem:before {
-content: "Theorem. ";
-         font-weight: bold;
-         font-style: normal;
+    content: "Theorem. ";
+    font-weight: bold;
+    font-style: normal;
 }
 
 .theorem[text]:before {
-content: "Theorem (" attr(text) ") ";
+    content: "Theorem (" attr(text) ") ";
 }
 
 .definition {
-display: block;
-         font-style: italic;
+    display: block;
+    font-style: italic;
 }
 
 .definition:before {
-content: "Definition. ";
-         font-weight: bold;
-         font-style: normal;
+    content: "Definition. ";
+    font-weight: bold;
+    font-style: normal;
 }
 
 .definition[text]:before {
-content: "Definition (" attr(text) ") ";
+    content: "Definition (" attr(text) ") ";
 }
 
 div.highlight {
@@ -210,11 +209,11 @@ div.highlight {
 }
 
 ◊|code-tag|.◊|code-class| {
-padding: 0.1rem;
-         font-family: julia_mono;
-         font-size: 13px;
-         font-feature-settings: "zero", "ss01";
-         font-variant-ligatures: contextual;
+    padding: 0.1rem;
+    font-family: julia_mono;
+    font-size: 13px;
+    font-feature-settings: "zero", "ss01";
+    font-variant-ligatures: contextual;
 }
 
 .hljs {

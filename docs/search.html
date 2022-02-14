@@ -14,7 +14,7 @@ MathJax = {
 };
 </script>
 <script type="text/javascript" id="MathJax-script" async
-  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+  src="assets/js/mathjax3-tex-svg.js">
 </script>
 <style>
 @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
