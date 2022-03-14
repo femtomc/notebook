@@ -21,9 +21,7 @@ MathJax = {
 <script src="../assets/js/highlight/highlight.min.js"></script>
 <script src="../assets/js/highlight/languages/haskell.min.js"></script>
 <style>
-@import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
-@import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
-@import url(https://fonts.googleapis.com/css2?family=PT+Serif&display=swap);
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
 </style>
 <link rel="stylesheet" type="text/css" href="../assets/css/fonts.css"/>
 <link rel="stylesheet" type="text/css" href="../assets/css/style.css"/>

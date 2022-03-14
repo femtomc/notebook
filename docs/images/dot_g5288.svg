@@ -9,107 +9,107 @@
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 184)">
 <title>G</title>
 <polygon fill="transparent" stroke="transparent" points="-4,4 -4,-184 866,-184 866,4 -4,4"/>
-<!-- 732177606909767725 -->
+<!-- 87331654852640637 -->
 <g id="node1" class="node">
-<title>732177606909767725</title>
-<g id="a_node1"><a xlink:href="../notes/gadts.html" xlink:title="Generalized algebraic&#10;data types" target="_blank">
+<title>87331654852640637</title>
+<g id="a_node1"><a xlink:href="../notes/forgetfulness_bb.html" xlink:title="On the forgetfulness&#10;of balls and bins" target="_blank">
 <polygon fill="lightgrey" stroke="black" points="158,-180 0,-180 0,-144 158,-144 158,-180"/>
-<text text-anchor="middle" x="79" y="-165.4" font-family="Times,serif" font-size="12.00">Generalized algebraic</text>
-<text text-anchor="middle" x="79" y="-152.4" font-family="Times,serif" font-size="12.00">data types</text>
+<text text-anchor="middle" x="79" y="-165.4" font-family="Times,serif" font-size="12.00">On the forgetfulness</text>
+<text text-anchor="middle" x="79" y="-152.4" font-family="Times,serif" font-size="12.00">of balls and bins</text>
 </a>
 </g>
 </g>
-<!-- 289035602837840169 -->
+<!-- 570372744497335187 -->
 <g id="node2" class="node">
-<title>289035602837840169</title>
-<g id="a_node2"><a xlink:href="../notes/cpssa.html" xlink:title="Some thoughts about&#10;CPS &amp; SSA" target="_blank">
+<title>570372744497335187</title>
+<g id="a_node2"><a xlink:href="../notes/inference_calibration.html" xlink:title="Rank statistics and&#10;inference calibration" target="_blank">
 <polygon fill="lightgrey" stroke="black" points="334,-180 176,-180 176,-144 334,-144 334,-180"/>
-<text text-anchor="middle" x="255" y="-165.4" font-family="Times,serif" font-size="12.00">Some thoughts about</text>
-<text text-anchor="middle" x="255" y="-152.4" font-family="Times,serif" font-size="12.00">CPS &amp; SSA</text>
-</a>
-</g>
-</g>
-<!-- 508565895565942783 -->
-<g id="node3" class="node">
-<title>508565895565942783</title>
-<g id="a_node3"><a xlink:href="../notes/math_is.html" xlink:title="The mathematical foundations&#10;of importance sampling" target="_blank">
-<polygon fill="lightgrey" stroke="black" points="387,-36 229,-36 229,0 387,0 387,-36"/>
-<text text-anchor="middle" x="308" y="-21.4" font-family="Times,serif" font-size="12.00">The mathematical foundations</text>
-<text text-anchor="middle" x="308" y="-8.4" font-family="Times,serif" font-size="12.00">of importance sampling</text>
-</a>
-</g>
-</g>
-<!-- 35698629529441969 -->
-<g id="node4" class="node">
-<title>35698629529441969</title>
-<g id="a_node4"><a xlink:href="../notes/smc_samplers.html" xlink:title="Notes on sequential&#10;Monte Carlo" target="_blank">
-<polygon fill="lightgrey" stroke="black" points="456,-108 298,-108 298,-72 456,-72 456,-108"/>
-<text text-anchor="middle" x="377" y="-93.4" font-family="Times,serif" font-size="12.00">Notes on sequential</text>
-<text text-anchor="middle" x="377" y="-80.4" font-family="Times,serif" font-size="12.00">Monte Carlo</text>
-</a>
-</g>
-</g>
-<!-- 35698629529441969&#45;&gt;508565895565942783 -->
-<g id="edge1" class="edge">
-<title>35698629529441969&#45;&gt;508565895565942783</title>
-<path fill="none" stroke="black" d="M359.94,-71.7C351.5,-63.14 341.18,-52.66 331.96,-43.3"/>
-<polygon fill="black" stroke="black" points="334.37,-40.77 324.86,-36.1 329.39,-45.68 334.37,-40.77"/>
-</g>
-<!-- 840031216919356538 -->
-<g id="node5" class="node">
-<title>840031216919356538</title>
-<g id="a_node5"><a xlink:href="../notes/unreasonable_smc.html" xlink:title="The unreasonable effectiveness&#10;of rejuvenation move SMC" target="_blank">
-<polygon fill="lightgrey" stroke="black" points="563,-36 405,-36 405,0 563,0 563,-36"/>
-<text text-anchor="middle" x="484" y="-21.4" font-family="Times,serif" font-size="12.00">The unreasonable effectiveness</text>
-<text text-anchor="middle" x="484" y="-8.4" font-family="Times,serif" font-size="12.00">of rejuvenation move SMC</text>
-</a>
-</g>
-</g>
-<!-- 35698629529441969&#45;&gt;840031216919356538 -->
-<g id="edge2" class="edge">
-<title>35698629529441969&#45;&gt;840031216919356538</title>
-<path fill="none" stroke="black" d="M403.18,-71.88C417.04,-62.81 434.24,-51.55 449.21,-41.76"/>
-<polygon fill="black" stroke="black" points="451.27,-44.59 457.72,-36.19 447.44,-38.74 451.27,-44.59"/>
-</g>
-<!-- 326700757350376793 -->
-<g id="node6" class="node">
-<title>326700757350376793</title>
-<g id="a_node6"><a xlink:href="../notes/compiler_desires.html" xlink:title="Feelings about language&#10;and compiler implementations" target="_blank">
-<polygon fill="lightgrey" stroke="black" points="686,-180 528,-180 528,-144 686,-144 686,-180"/>
-<text text-anchor="middle" x="607" y="-165.4" font-family="Times,serif" font-size="12.00">Feelings about language</text>
-<text text-anchor="middle" x="607" y="-152.4" font-family="Times,serif" font-size="12.00">and compiler implementations</text>
+<text text-anchor="middle" x="255" y="-165.4" font-family="Times,serif" font-size="12.00">Rank statistics and</text>
+<text text-anchor="middle" x="255" y="-152.4" font-family="Times,serif" font-size="12.00">inference calibration</text>
 </a>
 </g>
 </g>
 <!-- 329922244094190251 -->
-<g id="node7" class="node">
+<g id="node3" class="node">
 <title>329922244094190251</title>
-<g id="a_node7"><a xlink:href="../notes/aide.html" xlink:title="AIDE: towards automatic&#10;inference tuning" target="_blank">
+<g id="a_node3"><a xlink:href="../notes/aide.html" xlink:title="AIDE: towards automatic&#10;inference tuning" target="_blank">
 <polygon fill="lightgrey" stroke="black" points="510,-180 352,-180 352,-144 510,-144 510,-180"/>
 <text text-anchor="middle" x="431" y="-165.4" font-family="Times,serif" font-size="12.00">AIDE: towards automatic</text>
 <text text-anchor="middle" x="431" y="-152.4" font-family="Times,serif" font-size="12.00">inference tuning</text>
 </a>
 </g>
 </g>
-<!-- 329922244094190251&#45;&gt;35698629529441969 -->
-<g id="edge4" class="edge">
-<title>329922244094190251&#45;&gt;35698629529441969</title>
-<path fill="none" stroke="black" d="M417.65,-143.7C411.24,-135.39 403.44,-125.28 396.39,-116.14"/>
-<polygon fill="black" stroke="black" points="399.07,-113.88 390.19,-108.1 393.53,-118.16 399.07,-113.88"/>
+<!-- 840031216919356538 -->
+<g id="node4" class="node">
+<title>840031216919356538</title>
+<g id="a_node4"><a xlink:href="../notes/unreasonable_smc.html" xlink:title="The unreasonable effectiveness&#10;of rejuvenation move SMC" target="_blank">
+<polygon fill="lightgrey" stroke="black" points="456,-36 298,-36 298,0 456,0 456,-36"/>
+<text text-anchor="middle" x="377" y="-21.4" font-family="Times,serif" font-size="12.00">The unreasonable effectiveness</text>
+<text text-anchor="middle" x="377" y="-8.4" font-family="Times,serif" font-size="12.00">of rejuvenation move SMC</text>
+</a>
+</g>
 </g>
 <!-- 329922244094190251&#45;&gt;840031216919356538 -->
-<g id="edge3" class="edge">
+<g id="edge1" class="edge">
 <title>329922244094190251&#45;&gt;840031216919356538</title>
-<path fill="none" stroke="black" d="M444.34,-143.73C451.44,-133.78 459.76,-120.74 465,-108 473.15,-88.18 478,-64.39 480.76,-46.39"/>
-<polygon fill="black" stroke="black" points="484.25,-46.66 482.18,-36.27 477.32,-45.69 484.25,-46.66"/>
+<path fill="none" stroke="black" d="M417.25,-143.79C409.93,-133.85 401.37,-120.81 396,-108 387.72,-88.24 382.88,-64.44 380.16,-46.42"/>
+<polygon fill="black" stroke="black" points="383.59,-45.73 378.76,-36.3 376.66,-46.68 383.59,-45.73"/>
 </g>
-<!-- 570372744497335187 -->
+<!-- 35698629529441969 -->
+<g id="node5" class="node">
+<title>35698629529441969</title>
+<g id="a_node5"><a xlink:href="../notes/smc_samplers.html" xlink:title="Notes on sequential&#10;Monte Carlo" target="_blank">
+<polygon fill="lightgrey" stroke="black" points="563,-108 405,-108 405,-72 563,-72 563,-108"/>
+<text text-anchor="middle" x="484" y="-93.4" font-family="Times,serif" font-size="12.00">Notes on sequential</text>
+<text text-anchor="middle" x="484" y="-80.4" font-family="Times,serif" font-size="12.00">Monte Carlo</text>
+</a>
+</g>
+</g>
+<!-- 329922244094190251&#45;&gt;35698629529441969 -->
+<g id="edge2" class="edge">
+<title>329922244094190251&#45;&gt;35698629529441969</title>
+<path fill="none" stroke="black" d="M444.1,-143.7C450.39,-135.39 458.05,-125.28 464.96,-116.14"/>
+<polygon fill="black" stroke="black" points="467.8,-118.19 471.05,-108.1 462.22,-113.96 467.8,-118.19"/>
+</g>
+<!-- 35698629529441969&#45;&gt;840031216919356538 -->
+<g id="edge4" class="edge">
+<title>35698629529441969&#45;&gt;840031216919356538</title>
+<path fill="none" stroke="black" d="M457.82,-71.88C443.96,-62.81 426.76,-51.55 411.79,-41.76"/>
+<polygon fill="black" stroke="black" points="413.56,-38.74 403.28,-36.19 409.73,-44.59 413.56,-38.74"/>
+</g>
+<!-- 508565895565942783 -->
+<g id="node6" class="node">
+<title>508565895565942783</title>
+<g id="a_node6"><a xlink:href="../notes/math_is.html" xlink:title="The mathematical foundations&#10;of importance sampling" target="_blank">
+<polygon fill="lightgrey" stroke="black" points="632,-36 474,-36 474,0 632,0 632,-36"/>
+<text text-anchor="middle" x="553" y="-21.4" font-family="Times,serif" font-size="12.00">The mathematical foundations</text>
+<text text-anchor="middle" x="553" y="-8.4" font-family="Times,serif" font-size="12.00">of importance sampling</text>
+</a>
+</g>
+</g>
+<!-- 35698629529441969&#45;&gt;508565895565942783 -->
+<g id="edge3" class="edge">
+<title>35698629529441969&#45;&gt;508565895565942783</title>
+<path fill="none" stroke="black" d="M501.06,-71.7C509.5,-63.14 519.82,-52.66 529.04,-43.3"/>
+<polygon fill="black" stroke="black" points="531.61,-45.68 536.14,-36.1 526.63,-40.77 531.61,-45.68"/>
+</g>
+<!-- 289035602837840169 -->
+<g id="node7" class="node">
+<title>289035602837840169</title>
+<g id="a_node7"><a xlink:href="../notes/cpssa.html" xlink:title="Some thoughts about&#10;CPS &amp; SSA" target="_blank">
+<polygon fill="lightgrey" stroke="black" points="686,-180 528,-180 528,-144 686,-144 686,-180"/>
+<text text-anchor="middle" x="607" y="-165.4" font-family="Times,serif" font-size="12.00">Some thoughts about</text>
+<text text-anchor="middle" x="607" y="-152.4" font-family="Times,serif" font-size="12.00">CPS &amp; SSA</text>
+</a>
+</g>
+</g>
+<!-- 732177606909767725 -->
 <g id="node8" class="node">
-<title>570372744497335187</title>
-<g id="a_node8"><a xlink:href="../notes/inference_calibration.html" xlink:title="Rank statistics and&#10;inference calibration" target="_blank">
+<title>732177606909767725</title>
+<g id="a_node8"><a xlink:href="../notes/gadts.html" xlink:title="Generalized algebraic&#10;data types" target="_blank">
 <polygon fill="lightgrey" stroke="black" points="862,-180 704,-180 704,-144 862,-144 862,-180"/>
-<text text-anchor="middle" x="783" y="-165.4" font-family="Times,serif" font-size="12.00">Rank statistics and</text>
-<text text-anchor="middle" x="783" y="-152.4" font-family="Times,serif" font-size="12.00">inference calibration</text>
+<text text-anchor="middle" x="783" y="-165.4" font-family="Times,serif" font-size="12.00">Generalized algebraic</text>
+<text text-anchor="middle" x="783" y="-152.4" font-family="Times,serif" font-size="12.00">data types</text>
 </a>
 </g>
 </g>

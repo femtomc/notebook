@@ -1,8 +1,8 @@
 #lang pollen
 
 ◊(define-meta template "template.html")
-◊(define-meta title "The mathematical foundations of importance sampling")
 ◊(define-meta node-title "The mathematical foundations\nof importance sampling")
+◊(define-meta title "The mathematical foundations of importance sampling")
 
 Probabilistic modeling and inference deals with probability distributions - mathematical objects which are formally equivalent to ◊link["https://en.wikipedia.org/wiki/Measure_(mathematics)"]{measures}.
 

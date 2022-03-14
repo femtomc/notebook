@@ -12,7 +12,7 @@ a {
 
 div.header {
   display: flex;
-  font-size: 0.9rem;
+  font-size: 1.0rem;
   align-items: center;
   background: #fff;
 }
@@ -33,34 +33,34 @@ height: 30px;
 
 summary {
     border-left: 4px solid gray;
-color: #777777;
-       border-radius: 10px;
-padding: 10px;
-         padding-left:1rem;
-         font-size: 0.9rem;
-background: #f0f0f0;
+    color: #777777;
+    border-radius: 10px;
+    padding: 10px;
+    padding-left:1rem;
+    font-size: 1.0rem;
+    background: #f0f0f0;
 }
 
 div.note {
     border-left: 2px solid gray;
-color: #777777;
-       padding-top: 10px;
-       padding-bottom: 10px;
-       padding-left: 1rem;
-       padding-right: 1rem;
-       font-size: 0.9rem;
-background: #f0f0f0;
+    color: #777777;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: 1.0rem;
+    background: #f0f0f0;
 }
 
 
 figure.latex {
-display: inline-block;
+    display: inline-block;
 }
 
 figure {
-padding: 4px;
-margin: auto;
-        max-width: 100%;
+    padding: 4px;
+    margin: auto;
+    max-width: 100%;
 }
 
 figcaption {
@@ -69,7 +69,7 @@ figcaption {
     padding-left: 2rem;
     padding-right: 2rem;
     text-align: center;
-    font-size: 0.9rem;
+    font-size: 1.0rem;
 }
 
 object.dot {
@@ -96,7 +96,7 @@ img {
 figcaption.latex {
     text-align: center;
     font-style: italic;
-    font-size: 0.9rem;
+    font-size: 1.0rem;
     margin-top:0.5rem;
     margin-bottom:0.5rem;
 }
@@ -124,7 +124,7 @@ width:100%;
     border-radius:10px;
     text-rendering: optimizeLegibility;
     font-feature-settings: 'kern' 1;
-    font:400 1.0rem "Lora","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font:400 1.2rem "Lora","Helvetica Neue",Helvetica,Arial,sans-serif;
     color: #222;
     line-height: 1.4;
 }
@@ -145,7 +145,7 @@ width:100%;
 }
 
 title, h1, h2, h3, h4 {
-    font:400 "Lora","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 div.xlink {
@@ -209,7 +209,7 @@ div.highlight {
 span.code {
     padding: 0.1rem;
     font-family: julia_mono;
-    font-size: 13px;
+    font-size: 1.0rem;
     font-feature-settings: "zero", "ss01";
     font-variant-ligatures: contextual;
 }
@@ -219,7 +219,7 @@ span.code {
     word-wrap: break-word;
     font-family: julia_mono;
     font-feature-settings: "zero", "ss01";
-    font-size: 0.9rem;
+    font-size: 1.0rem;
     font-variant-ligatures: contextual;
 }
 
